@@ -5,10 +5,10 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-    res.send('Chào mừng đến với hệ thống chi trả xã hội!');
+    res.send('Welcome to the social payment system!');
 });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`Server đang chạy trên http://localhost:${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
